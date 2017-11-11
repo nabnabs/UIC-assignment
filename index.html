@@ -5,7 +5,16 @@
     <title>Nina's button</title>
   </head>
   <body>
-    <p>Moikka.</p>
-    <p>yay</p>
+    <p>hello.</p>
+    <div id="button" class="centered">
+			<button type="submit">Click me</button>
+			<script>
+				$('button').on('click', function() {
+					$('#assignment').append("<p>Done</p>");
+		 		});
+			</script>
+		</div>
+		<div id="assignment">
+		</div>
   </body>
 </html>
